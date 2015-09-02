@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- Using indeOf()  It takes two parameters. 1) The string that you would like to find and 2) The character position to start searching from. (The last paramter is optional...when omitted, it starts from beginning of string provided.) -->
+<html>
+<head>
+	<title>Chapter 5: Example 1</title>
+</head>
+	
+<body>
+	<script type="text/javascript">
+		var myString = "Welcome to Wrox books. ";
+		myString = myString + "The Wrox website is www.wrox.com. ";
+		myString = myString + "Visit the Wrox website today. Thanks for buying Wrox";
+		
+		var foundAtPosition = 0;
+		var wroxCount = 0;
+		
+		while (foundAtPosition != -1) {
+			foundAtPosition = myString.indexOf("Wrox", foundAtPosition);
+			if (foundAtPosition != -1) {
+				wroxCount++;
+				foundAtPosition++;
+			}
+		}
+		
+		document.write("There are " + wroxCount + " occurrences of the word Wrox");
+	</script>
+	
+</body>
+</html>
