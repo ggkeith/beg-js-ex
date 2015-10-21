@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Using some() and filter()</title>
+</head>
+<body>
+  <script>
+    var numbers = new Array (1, 2, 3, 4, 5);
+
+    function isLessThanThree(value, index, array) {
+      var returnValue = false;
+
+      if (value < 3) {
+        returnValue = true;
+      }
+      return returnValue;
+    }
+
+    if (numbers.some(isLessThanThree)) {
+      var result = numbers.filter(isLessThanThree);
+      alert("These numbers are less than three: " + result);
+    }
+
+  </script>
+
+</body>
+</html>
