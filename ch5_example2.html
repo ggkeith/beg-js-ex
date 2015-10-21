@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Chapter 5: Example 2</title>
   <script type="text/javascript">
     function checkCharType(charToCheck) {
-        var returnValue = "O";
-        var charCode = charToCheck.charCodeAt(0);
+      var returnValue = "O";
+      var charCode = charToCheck.charCodeAt(0);
 
-        if (charCode >= "A".charCodeAt(0) && charCode <= "Z".charCodeAt(0)) {
-          returnValue = "U";
-        } else if (charCode >= "a".charCodeAt(0) && charCode <= "z".charCodeAt(0)) {
-          returnValue = "L";
-        } else if (charCode >= "0".charCodeAt(0) && charCode <= "9".charCodeAt(0)) {
-          returnValue = "N";
-        }
-        return returnValue;
+      if (charCode >= "A".charCodeAt(0) && charCode <= "Z".charCodeAt(0)) {
+        returnValue = "U";
+      } else if (charCode >= "a".charCodeAt(0) && charCode <= "z".charCodeAt(0)) {
+        returnValue = "L";
+      } else if (charCode >= "0".charCodeAt(0) && charCode <= "9".charCodeAt(0)) {
+        returnValue = "N";
+      }
+      return returnValue;
     }
   </script>
 </head>
+
 <body>
   <script type="text/javascript">
-    var myString = prompt("Enter some text", "Hello World!"!);
-    switch (charToCheck(myString)) {
+    var myString = prompt("Enter some text", "Hello World!");
+    switch (checkCharType(myString)) {
       case "U":
         document.write("First character is upper case.");
         break;
@@ -38,4 +40,5 @@
   </script>
 
 </body>
+
 </html>
