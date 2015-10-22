@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 5: Example 4</title>
+</head>
+<body>
+  <script>
+    var myNumber = prompt("Enter the number to be rounded", "");
+
+    document.write("<h3>The number your entered was " + myNumber + "</h3><br />");
+    document.write("<p> the rounding results for this number are</p>");
+    document.write("<table width-'150' border='1'>");
+    document.write("<tr><td>parseInt()</td><td>" + parseInt(myNumber) + "</td></tr>");
+    document.write("<tr><td>ceil()</td><td>" + Math.ceil(myNumber) + "</td></tr>");
+    document.write("<tr><td>floor()</td><td>" + Math.floor(myNumber) + "</td></tr>");
+    document.write("<tr><td>round()</td><td>" + Math.round(myNumber) + "</td></tr>");
+    document.write("</table>");
+
+  </script>
+
+</body>
+</html>
