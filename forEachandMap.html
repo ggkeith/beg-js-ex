@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Using forEach() and map()</title>
+</head>
+<body>
+  <!-- <script>
+    var numbers = new Array(1, 2, 3, 4, 5);
+
+    function doubleAndAlert(value, index, array)
+    {
+      var result = value * 2;
+      alert(result);
+    }
+    numbers.forEach(doubleAndAlert);
+  </script> -->
+
+  <script>
+    var numbers = new Array(1, 2, 3, 4, 5);
+
+    function doubleAndAlert(value, index, array)
+    {
+      var result = value * 2;
+      return result;
+    }
+
+    var doubledNumbers = numbers.map(doubleAndAlert);
+    alert("The doubled numbers are: " + doubledNumbers);
+  </script>
+
+</body>
+</html>
